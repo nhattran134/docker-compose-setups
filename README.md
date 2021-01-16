@@ -6,11 +6,11 @@
 
 
 ## List những app hiện đang có trong file:
-- [x] Gitlab: port **9000**
-- [x] Jenkins: port **8081**
-- [x] SonarQube: port **9090**
-- [x] Docker Registry: port **5000**
-- [x] Nexus Repository Manager: port **10680**
+- [x] Gitlab:                     port **9000**
+- [x] Jenkins:                    port **8081**
+- [x] SonarQube:                  port **9090**
+- [x] Docker Registry:            port **5000**
+- [x] Nexus Repository Manager:   port **10680**
 - [ ] Postgres DB (được cài chung với Sonarqube, chưa rõ là có cần thiết hay không)
 
 ## Những lỗi thường gặp:
