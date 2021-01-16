@@ -6,11 +6,11 @@
 
 
 ## List những app hiện đang có trong file:
-- [x] Gitlab
-- [x] Jenkins
-- [x] SonarQube
-- [x] Docker Registry
-- [x] Nexus Repository Manager
+- [x] Gitlab:**9000**
+- [x] Jenkins:**8081**
+- [x] SonarQube:**9090**
+- [x] Docker Registry:**5000**
+- [x] Nexus Repository Manager:**10680**
 - [ ] Postgres DB
 
 ## Những lỗi thường gặp:
