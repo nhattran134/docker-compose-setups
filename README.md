@@ -1,9 +1,48 @@
 # Hướng dẫn cài đặt tất cả các app lên docker bằng lệnh docker-compose:
 
+## Cài đặt Docker
+### Bước 1: Chạy lệnh update
+```
+sudo apt-get update
+
+sudo apt-get install \
+    apt-transport-https \
+    ca-certificates \
+    curl \
+    gnupg-agent \
+    software-properties-common
+```
+### Bước 2: Thêm repo của docker vào Ubuntu
+```
+ curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo apt-key add -
+
+sudo add-apt-repository \
+   "deb [arch=amd64] https://download.docker.com/linux/ubuntu \
+   $(lsb_release -cs) \
+   stable"
+```
+
 
 - [x] Đã test
 - [ ] Chưa Test
-
+### Bước 3: Cài đặt Docker và những thứ liên quan
+```
+sudo apt-get update
+sudo apt-get install docker-ce docker-ce-cli containerd.io
+```
+### Test xem Docker đã chạy chưa
+```
+sudo docker -v
+```
+## Cài đặt Docker Compose
+```
+sudo curl -L "https://github.com/docker/compose/releases/download/1.27.4/docker-compose-$(uname -s)-$(uname -m)" -o /usr/local/bin/docker-compose
+sudo chmod +x /usr/local/bin/docker-compose
+```
+### Test xem Docker Compose đã chạy chưa
+```
+sudo docker-compose --version
+```
 
 ## List những app hiện đang có trong file:
 - [x] Gitlab:                     port **9000**
