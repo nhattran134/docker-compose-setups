@@ -1,6 +1,6 @@
 #!/bin/bash
-sudo apt-get update
-sudo apt-get install \
+sudo apt-get update -y
+sudo apt-get install -y \
     apt-transport-https \
     ca-certificates \
     curl \
@@ -11,8 +11,8 @@ sudo add-apt-repository \
    "deb [arch=amd64] https://download.docker.com/linux/ubuntu \
    $(lsb_release -cs) \
    stable"
-sudo apt-get update
-sudo apt-get install docker-ce docker-ce-cli containerd.io
+sudo apt-get update -y
+sudo apt-get install  -y docker-ce docker-ce-cli containerd.io
 sudo mkdir /srv/nexus
 sudo chmod 600 /srv/nexus
 
